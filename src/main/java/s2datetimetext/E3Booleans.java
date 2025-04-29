@@ -13,7 +13,8 @@ public class E3Booleans {
 
     int minusOne = -1;
     System.out.println(Integer.toBinaryString(minusOne));
-    System.out.println("-1 & 2 = " + (minusOne & x) + "; " + Integer.toBinaryString(minusOne & x)); // bitwise operations
+    System.out.println("-1 & 2 = " + (minusOne & x) + "; "
+        + Integer.toBinaryString(minusOne & x)); // bitwise operations
     System.out.println("4 | 2 = " + (4 | x) + "; " + Integer.toBinaryString(4 | x)); // bitwise operations
     System.out.println("-1 ^ 2 = " + (-1 ^ x) + "; " + Integer.toBinaryString(-1 ^ x)); // bitwise operations
 //    System.out.println("-1 && 2 = " + (minusOne && x)); // &&, || require [Bb]oolean

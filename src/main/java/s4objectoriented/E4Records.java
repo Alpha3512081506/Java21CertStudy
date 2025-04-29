@@ -16,18 +16,20 @@ record Customer(String name, int creditLimit) {
 //    // any interaction with the final fields of the components is prohibited here
 //  }
   // Canonical constructor, formal parameter list must EXACTLY match components (including the names)
-  Customer(String name, int creditLimit) {
-    // user code, e.g. validation is permitted here
-    //assignment to the fields created from the components is mandatory here
-    this.name = name;
-    this.creditLimit = creditLimit;
-  }
+//  Customer(String name, int creditLimit) {
+//    // user code, e.g. validation is permitted here
+//    //assignment to the fields created from the components is mandatory here
+////    if (name == null || name.length() == 0) throw new IllegalArgumentException("Bad name");
+//    this.name = name;
+//    this.creditLimit = creditLimit;
+//  }
 
   // Additional, overloaded constructors are permitted, but must delegate
   // eventually to the canonical / compact form
   Customer(String name) {
     this(name, 1000);
   }
+  Customer() { this("Unknonwn"); }
 
   // a replacement for the name accessor method.
   // must be public, return String, take no arguments, and not use throws

@@ -9,7 +9,9 @@ package s4objectoriented;
 class OuterNest {
   private static String os = "Outer String private member";
   static void showAll() {
-    System.out.println(OuterNest.os + ", " + Nested.is);
+    System.out.println(OuterNest.os + ", "
+        + Nested.is);
+//        + OuterNest.Nested.is); // fully qualified :)
   }
 
   static class Nested {

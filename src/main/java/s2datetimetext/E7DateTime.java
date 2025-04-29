@@ -18,6 +18,6 @@ public class E7DateTime {
     System.out.println(apr4);
 
     System.out.println("Day of week is " + feb28.get(ChronoField.DAY_OF_WEEK));
-//    System.out.println("Hour of day is " + feb28.get(ChronoField.HOUR_OF_DAY)); // Exception
+    System.out.println("Hour of day is " + feb28.get(ChronoField.HOUR_OF_DAY)); // Exception
   }
 }

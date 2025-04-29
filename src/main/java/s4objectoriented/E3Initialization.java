@@ -24,7 +24,8 @@ class Parent {
     return name;
   }
   public Parent() {
-    System.out.println("Parent() constructor; name is " + name + ", getName() is " + getName());
+    System.out.println("Parent() constructor; name is " + name
+        + ", getName() is " + getName());
   }
   static { System.out.println("Parent static init 2; stat = " + stat); }
   public String getParentName() {

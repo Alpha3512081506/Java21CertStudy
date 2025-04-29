@@ -2,7 +2,7 @@ package s2datetimetext;
 
 public class E1BasicTypesLiterals {
   public static void main(String[] args) {
-    int x1 = 123;
+//    int x1 = 123;
 //    int xBad = 123_456_789_000; // literal is too big for int
 //    long xBad = 123_456_789_000; // really, it's the *literal* that's too big for int
     var x2 = 123_456_789_000L; // also l
@@ -44,5 +44,19 @@ public class E1BasicTypesLiterals {
 //    Long lBad = 99; // NOT ok -- autoboxing cannot change "underlying type"
     // Class hierarchy has Number as parent of Integer, Long, etc. the concrete types are *siblings*
 
+    var something = mightBeNull();
+//    var bad;
+//    bad = 10;
+//    var bad = null;
+  }
+
+//  int getNum() {
+//    if (Math.random() > 0.5) {
+//      return 0;
+//    }
+//  }
+
+  public static String mightBeNull() {
+    return null;
   }
 }

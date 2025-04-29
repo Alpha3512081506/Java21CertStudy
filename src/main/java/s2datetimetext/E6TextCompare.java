@@ -29,6 +29,10 @@ public class E6TextCompare {
     System.out.println(sb1.equals(sb2)); // StringBuilder doesn't provide equals comparison
     System.out.println("Relative order of sb1 and sb2? " + sb1.compareTo(sb2)); // but does provide order
 
-
+    System.out.println("---------------------");
+    System.out.println(s2 == s4);
+    String s6 = s4.intern();
+    System.out.println(s2 == s4);
+    System.out.println(s2 == s6);
   }
 }

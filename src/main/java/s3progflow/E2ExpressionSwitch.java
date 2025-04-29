@@ -25,11 +25,15 @@ public class E2ExpressionSwitch {
     String msg = switch (card) {
       case HEART -> { // RHS of -> must be a single "statement expression", or a block with yield in it
         System.out.println("Hmm, looks like a good card!");
-        yield "Your card is trumps";
+        if (Math.random() > 0.5)
+          yield "Your card is trumps";
+        System.out.println("oops");
+        yield "Whatever!!!";
       }
       default -> "Sorry, that suit is not trumps";
     };
 
+    System.out.println("-----------------------");
     System.out.println(switch (card) {
       case HEART: // RHS of : must use yield
         System.out.println("Hmm, looks like a good card!");

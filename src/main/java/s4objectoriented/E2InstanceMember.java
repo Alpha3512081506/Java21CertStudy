@@ -20,11 +20,14 @@ class MyList<E> implements Iterable<E> {
   // Note: this class would normally be private!!!
   public class MyIterator implements Iterator<E> {
     private int progress = 0;
+    // referece to the MyList to be iterated???
+    // that's: MyList MyList.this
 
     @Override
-    public boolean hasNext() {
-      return progress < count;
-    }
+//    public boolean hasNext() {
+//      return progress < MyList.this.count;
+//    }
+    public boolean hasNext() { return progress < count; }
 
     @Override
     public E next() {
@@ -43,9 +46,9 @@ class MyList<E> implements Iterable<E> {
 
   @Override
   public Iterator<E> iterator() {
-    return new MyIterator();
+//    return new MyIterator();
 // again, the longhand / disambiguating form
-//    return MyList.this.new MyIterator();
+    return this.new MyIterator();
   }
 }
 
