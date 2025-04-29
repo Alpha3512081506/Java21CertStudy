@@ -17,5 +17,8 @@ public class E3Booleans {
     System.out.println("4 | 2 = " + (4 | x) + "; " + Integer.toBinaryString(4 | x)); // bitwise operations
     System.out.println("-1 ^ 2 = " + (-1 ^ x) + "; " + Integer.toBinaryString(-1 ^ x)); // bitwise operations
 //    System.out.println("-1 && 2 = " + (minusOne && x)); // &&, || require [Bb]oolean
+    System.out.println(Boolean.parseBoolean("true"));
+    System.out.println(Boolean.parseBoolean("false"));
+    System.out.println(Boolean.parseBoolean(" true "));
   }
 }
